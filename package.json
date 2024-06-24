@@ -1,6 +1,6 @@
 {
 	"name": "@silenloc/renovate-graph-dreamy",
-	"version": "0.19.0",
+	"version": "0.0.1",
 	"main": "dist/executable.js",
 	"license": "AGPL-3.0",
 	"author": "Silen Locatelli",
@@ -28,8 +28,7 @@
 	"scripts": {
 		"build": "tsc",
 		"lint": "biome check",
-		"format": "biome check --write --unsafe",
-		"ci-publish": "ci-publish"
+		"format": "biome check --write --unsafe"
 	},
 	"files": ["dist/*"]
 }

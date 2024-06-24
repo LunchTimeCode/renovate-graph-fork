@@ -21,3 +21,7 @@ fmt:
 
 run:
     bun run build
+
+
+publish:
+    npm publish --access public
