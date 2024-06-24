@@ -8,7 +8,7 @@ install:
     npm ci
 
 # Perform all verifications (compile, test, lint, etc.)
-verify: lint
+verify: lint build
 
 build:
     bun run build
