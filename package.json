@@ -1,12 +1,12 @@
 {
-	"name": "@jamietanna/renovate-graph",
+	"name": "@silenloc/renovate-graph-dreamy",
 	"version": "0.19.0",
 	"main": "dist/executable.js",
 	"license": "AGPL-3.0",
-	"author": "Jamie Tanna",
+	"author": "Silen Locatelli",
 	"repository": {
 		"type": "git",
-		"url": "git+https://gitlab.com/tanna.dev/renovate-graph.git"
+		"url": "git+https://github.com/LunchTimeCode/renovate-graph-fork"
 	},
 	"engines": {
 		"node": ">=18.19.0"
