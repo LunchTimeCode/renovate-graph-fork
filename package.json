@@ -1,0 +1,35 @@
+{
+	"name": "@jamietanna/renovate-graph",
+	"version": "0.19.0",
+	"main": "dist/executable.js",
+	"license": "AGPL-3.0",
+	"author": "Jamie Tanna",
+	"repository": {
+		"type": "git",
+		"url": "git+https://gitlab.com/tanna.dev/renovate-graph.git"
+	},
+	"engines": {
+		"node": ">=18.19.0"
+	},
+	"dependencies": {
+		"@octokit/app": "^13.1.2",
+		"@octokit/auth-app": "^4.0.9",
+		"renovate": "^37.x"
+	},
+	"bin": "dist/executable.js",
+	"devDependencies": {
+		"@biomejs/biome": "1.8.1",
+		"@tsconfig/node18": "^18.2.4",
+		"@types/node": "^18.19.33",
+		"ci-publish": "^1.3.0",
+		"ts-standard": "^12.0.1",
+		"typescript": "^5.4.5"
+	},
+	"scripts": {
+		"build": "tsc",
+		"lint": "biome check",
+		"format": "biome check --write --unsafe",
+		"ci-publish": "ci-publish"
+	},
+	"files": ["dist/*"]
+}
