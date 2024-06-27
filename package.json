@@ -12,8 +12,8 @@
 		"node": ">=18.19.0"
 	},
 	"dependencies": {
-		"@octokit/app": "^13.1.2",
-		"@octokit/auth-app": "^4.0.9",
+		"@octokit/app": "^15.0.0",
+		"@octokit/auth-app": "^7.0.0",
 		"renovate": "^37.x"
 	},
 	"bin": "dist/executable.js",
