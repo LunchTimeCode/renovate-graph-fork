@@ -1,0 +1,10 @@
+name: 'DreamyCollector'
+description: 'Collects depenencies via renovate'
+inputs:
+  out-dir:
+    description: 'out dir for the json'
+    required: false
+    default: 'out'
+runs:
+  using: 'node20'
+  main: dist/index.js

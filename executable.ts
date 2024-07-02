@@ -12,8 +12,11 @@ import {
 	setupRenovate,
 } from "./index";
 
-(async () => {
-	const outDir: string = process.env.OUT_DIR ?? "out";
+
+export async function runDreamyAction(
+  out_dir: string
+): Promise<void> {
+	const outDir: string = out_dir;
 	if (!fs.existsSync(outDir)) {
 		fs.mkdirSync(outDir, { recursive: true });
 	} else if (!fs.statSync(outDir).isDirectory()) {
@@ -60,7 +63,4 @@ import {
 
 		await discoverAndProcessThroughRenovate(config, outDir, metadata);
 	}
-})().catch((e) => {
-	logger.error(e);
-	process.exit(1);
-});
+}

@@ -113,7 +113,7 @@ export async function parseYarnLockfileEntry(
 }
 
 export async function parseNPMLockfileEntry(
-	lockfileVersion: number | undefined,
+	_lockfileVersion: number | undefined,
 	key: string,
 	value: string,
 ): Promise<PackageDependency<Record<string, any>>> {
@@ -136,7 +136,7 @@ export async function parseNPMLockfileEntry(
 }
 
 export async function parsePNPMLockfileEntry(
-	lockfileVersion: number | undefined,
+	_lockfileVersion: number | undefined,
 	key: string,
 	value: string,
 	depType: string,

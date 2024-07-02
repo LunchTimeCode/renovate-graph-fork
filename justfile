@@ -22,6 +22,9 @@ fmt:
 run:
     bun run build
 
+ncc:
+    npm i -g @vercel/ncc
+    ncc build executable.ts
 
 publish:
     npm publish --access public

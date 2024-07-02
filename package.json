@@ -12,6 +12,8 @@
 		"node": ">=18.19.0"
 	},
 	"dependencies": {
+		"@actions/core": "^1.10.1",
+		"@actions/github": "^6.0.0",
 		"@octokit/app": "^13.1.2",
 		"@octokit/auth-app": "^4.0.9",
 		"renovate": "^37.x"
@@ -30,5 +32,7 @@
 		"lint": "biome check",
 		"format": "biome check --write --unsafe"
 	},
-	"files": ["dist/*"]
+	"files": [
+		"dist/*"
+	]
 }

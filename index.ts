@@ -27,6 +27,24 @@ import { getNpmLock } from "renovate/dist/modules/manager/npm/extract/npm";
 import { getPnpmLock } from "renovate/dist/modules/manager/npm/extract/pnpm";
 import { getYarnLock } from "renovate/dist/modules/manager/npm/extract/yarn";
 import { logger } from "./logger";
+import core from "@actions/core";
+import {runDreamyAction} from "./executable";
+
+
+// eslint-disable-next-line @typescript-eslint/no-floating-promises
+run()
+
+
+export async function run(): Promise<void> {
+	try {
+		const out = core.getInput('out-dir');
+		await runDreamyAction(out)
+
+	} catch (error) {
+		// Fail the workflow run if an error occurs
+		if (error instanceof Error) core.setFailed(error.message)
+	}
+}
 
 function excludedRepositories(): string[] {
 	if (process.env.RG_EXCLUDE_REPOS === undefined) {
