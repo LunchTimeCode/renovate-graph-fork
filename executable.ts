@@ -8,15 +8,15 @@ import { version as renovateVersion } from "renovate/package.json";
 import {
 	buildRenovateMetadata,
 	discoverAndProcessThroughGitHubApp,
-	discoverAndProcessThroughRenovate, run,
+	discoverAndProcessThroughRenovate,
+	run,
 	setupRenovate,
 } from "./index";
 
-
 run().then();
 
-export async function runDreamyAction(out_dir: string): Promise<void> {
-	const outDir: string = out_dir;
+export async function runDreamyAction(): Promise<void> {
+	const outDir: string = process.env.OUT_DIR ?? "out";
 	if (!fs.existsSync(outDir)) {
 		fs.mkdirSync(outDir, { recursive: true });
 	} else if (!fs.statSync(outDir).isDirectory()) {

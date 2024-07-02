@@ -29,6 +29,7 @@
 	},
 	"scripts": {
 		"build": "tsc",
+		"package": "pkg package.json --output binary && node scripts/move-binary.js",
 		"lint": "biome check",
 		"format": "biome check --write --unsafe"
 	},

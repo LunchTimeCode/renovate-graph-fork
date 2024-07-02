@@ -23,22 +23,16 @@ import type {
 	WritePackageDataCallbackOptions,
 } from "./types";
 
-import core from "@actions/core";
 import { getNpmLock } from "renovate/dist/modules/manager/npm/extract/npm";
 import { getPnpmLock } from "renovate/dist/modules/manager/npm/extract/pnpm";
 import { getYarnLock } from "renovate/dist/modules/manager/npm/extract/yarn";
 import { runDreamyAction } from "./executable";
 import { logger } from "./logger";
 
-
 export async function run(): Promise<void> {
 	try {
-		const out = core.getInput("out-dir");
-		await runDreamyAction(out);
-	} catch (error) {
-		// Fail the workflow run if an error occurs
-		if (error instanceof Error) core.setFailed(error.message);
-	}
+		await runDreamyAction();
+	} catch (error) {}
 }
 
 function excludedRepositories(): string[] {
