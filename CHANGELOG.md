@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/LunchTimeCode/renovate-graph-fork/compare/v1.0.1...v1.0.2) (2024-07-02)
+
+
+### Bug Fixes
+
+* commit node mods ([9151827](https://github.com/LunchTimeCode/renovate-graph-fork/commit/915182717c4b8193f730ab960687aab12354c4c6))
+
 ## [1.0.1](https://github.com/LunchTimeCode/renovate-graph-fork/compare/v1.0.0...v1.0.1) (2024-07-02)
 
 
