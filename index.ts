@@ -30,8 +30,6 @@ import { getYarnLock } from "renovate/dist/modules/manager/npm/extract/yarn";
 import { runDreamyAction } from "./executable";
 import { logger } from "./logger";
 
-// eslint-disable-next-line @typescript-eslint/no-floating-promises
-run().then();
 
 export async function run(): Promise<void> {
 	try {

@@ -28,3 +28,4 @@ ncc:
 
 publish:
     npm publish --access public
+

@@ -8,9 +8,12 @@ import { version as renovateVersion } from "renovate/package.json";
 import {
 	buildRenovateMetadata,
 	discoverAndProcessThroughGitHubApp,
-	discoverAndProcessThroughRenovate,
+	discoverAndProcessThroughRenovate, run,
 	setupRenovate,
 } from "./index";
+
+
+run().then();
 
 export async function runDreamyAction(out_dir: string): Promise<void> {
 	const outDir: string = out_dir;
