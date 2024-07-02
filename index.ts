@@ -31,7 +31,7 @@ import { runDreamyAction } from "./executable";
 import { logger } from "./logger";
 
 // eslint-disable-next-line @typescript-eslint/no-floating-promises
-run();
+run().then();
 
 export async function run(): Promise<void> {
 	try {
