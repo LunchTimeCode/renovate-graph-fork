@@ -29,7 +29,7 @@
     },
     "devDependencies": {
         "@types/glob": "5.0.35",
-        "@types/minimatch": "3.0.3",
+        "@types/minimatch": "3.0.5",
         "@types/mocha": "^2.2.44",
         "@types/shelljs": "0.7.8",
         "mocha": "^3.5.3",
