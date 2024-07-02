@@ -12,10 +12,7 @@ import {
 	setupRenovate,
 } from "./index";
 
-
-export async function runDreamyAction(
-  out_dir: string
-): Promise<void> {
+export async function runDreamyAction(out_dir: string): Promise<void> {
 	const outDir: string = out_dir;
 	if (!fs.existsSync(outDir)) {
 		fs.mkdirSync(outDir, { recursive: true });
