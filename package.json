@@ -1,6 +1,6 @@
 {
 	"name": "@silenloc/renovate-graph-dreamy",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"main": "dist/executable.js",
 	"license": "AGPL-3.0",
 	"author": "Silen Locatelli",
