@@ -14,8 +14,8 @@
 	"dependencies": {
 		"@actions/core": "^1.10.1",
 		"@actions/github": "^6.0.0",
-		"@octokit/app": "^13.1.2",
-		"@octokit/auth-app": "^4.0.9",
+		"@octokit/app": "^15.1.4",
+		"@octokit/auth-app": "^7.1.5",
 		"renovate": "^37.x"
 	},
 	"bin": "dist/executable.js",
